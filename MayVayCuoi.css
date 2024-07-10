@@ -1,0 +1,645 @@
+/* Basic styling for the body */
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  background-size: cover;
+  font-family: sans-serif;
+  margin-left: 200px; /* Thụt vào 200px từ bên trái */
+  margin-right: 200px; /* Thụt vào 200px từ bên phải */
+}
+
+/* Tạo kiểu cho tiêu đề để căn chỉnh logo và tiêu đề */
+
+.logo a {
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Thay đổi màu sắc của các biểu tượng */
+.fa-youtube-play {
+  color: #ff0000; /* Màu của biểu tượng YouTube */
+}
+
+.fa-facebook-square {
+  color: #3b5998; /* Màu của biểu tượng Facebook */
+}
+
+.fa-instagram {
+  color: #bc2a8d; /* Màu của biểu tượng Instagram */
+}
+
+/* Global box-sizing */
+* {
+  -webkit-box-sizing: border-box;
+}
+figure {
+  text-align: center; /* căn giữa nội dung trong thẻ figure */
+}
+figcaption {
+  display: block; /* hiển thị chú thích dưới dạng khối */
+  margin: 10px auto; /* căn giữa chú thích theo chiều ngang và dọc */
+  font-style: italic; /* có thể thêm kiểu chữ nghiêng cho chú thích */
+}
+p {
+  font-size: 20px; /* Ví dụ: chỉnh cỡ chữ thành 18px */
+  text-align: center; /* Căn giữa nội dung ngang */
+  text-align: left;
+  width: 100%; /* Độ rộng của phần tử */
+}
+i {
+  font-size: 1.3em;
+}
+li {
+  font-size: 25px;
+}
+.box-menu {
+  background-color: white;
+  text-align: center;
+  color: rgb(201, 155, 99);
+  letter-spacing: 0.2px;
+  position: fixed; /* Giữ thuộc tính này để cố định menu */
+  top: 0; /* Cố định ở đầu trang */
+  left: 10.5%; /* Đảm bảo menu căn giữa, tổng left và right là 21% */
+  width: 79%; /* Đảm bảo chiều rộng của menu là 79% */
+  z-index: 1000; /* Đảm bảo menu nằm trên các phần tử khác */
+}
+/* -------------------------------------------------menu con Trang phục cưới-------------------------------------------- */
+.box-submenu ul li:hover > .menuConTPC {
+  display: block;
+}
+.menuConTPC {
+  display: none;
+  position: absolute;
+  top: 38px;
+  height: 190px;
+  left: 0;
+  margin-bottom: 200px; /* Di chuyển lên trên */
+  background-color: whitesmoke;
+  z-index: 10;
+}
+.box-menu ul li:hover .menuConTPC {
+  display: block;
+}
+
+.box-menu ul li:hover .menuConTPC ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.box-menu ul li:hover .menuConTPC ul li {
+  width: 200px; /* Đặt chiều rộng của các phần tử <li> là 200px. */
+  text-align: left; /* Căn chỉnh văn bản sang trái trong các phần tử <li>. */
+  border-bottom: 0px dotted #fff; /* Đặt đường viền dưới của các phần tử <li> thành dạng chấm (dotted),
+        /* màu trắng (fff), và chiều cao là 0px (không có đường viền). */
+  background: transparent; /* Đặt nền của các phần tử <li> là trong suốt. */
+  border-radius: 0; /* Đặt độ cong của các góc của các phần tử <li> thành 0, làm cho chúng có các góc vuông. */
+  padding: 5px; /*Đặt phần đệm (padding) của các phần tử <li> là 5px, tạo khoảng cách giữa nội dung và biên của phần tử. */
+  margin: 5px; /*Đặt phần lề (margin) của các phần tử <li> là 5px, tạo khoảng cách giữa các phần tử. */
+}
+
+.box-menu ul li:hover .menuConTPC ul li:last-child {
+  border-bottom: none; /* Loại bỏ đường gạch chân dưới của phần tử cuối cùng */
+}
+/* -----------------------------------Con Trang phục cưới - Váy cưới làm lễ--------------------------------------- */
+.logoVCLL {
+  display: flex;
+}
+
+.logoVCLL i {
+  margin-left: 70px; /* Để khoảng cách giữa văn bản và biểu tượng */
+}
+
+.menuConTPC ul {
+  position: relative;
+}
+
+.menuConTPC ul li {
+  position: relative;
+}
+
+.menuConTPC .conVayCuoiLamLe {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -200px; /* Ẩn menu con ban đầu ở bên phải */
+  width: 200px;
+  background-color: whitesmoke;
+  z-index: 10;
+  opacity: 0; /* Mặc định là ẩn */
+  transition: opacity 0.3s ease; /* Hiệu ứng mượt khi thay đổi opacity */
+}
+
+.menuConTPC ul li:hover > .conVayCuoiLamLe {
+  display: block;
+  right: 1; /* Hiển thị menu bên phải của mục chính */
+  opacity: 1; /* Hiển thị menu con */
+}
+
+.menuConTPC .conVayCuoiLamLe ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------Con trang phục cưới - Váy cưới đi bàn------------------------------------- */
+.logoVCLL {
+  display: flex;
+}
+
+.logoVCLL i {
+  margin-left: 70px; /* Để khoảng cách giữa văn bản và biểu tượng */
+}
+
+.menuConTPC ul {
+  position: relative;
+}
+
+.menuConTPC ul li {
+  position: relative;
+}
+
+.menuConTPC .VayCuoiDiBan {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -200px; /* Ẩn menu con ban đầu ở bên phải */
+  width: 200px;
+  background-color: whitesmoke;
+  z-index: 10;
+  opacity: 0; /* Mặc định là ẩn */
+  transition: opacity 0.3s ease; /* Hiệu ứng mượt khi thay đổi opacity */
+}
+
+.menuConTPC ul li:hover > .VayCuoiDiBan {
+  display: block;
+  right: 1; /* Hiển thị menu bên phải của mục chính */
+  opacity: 1; /* Hiển thị menu con */
+}
+
+.menuConTPC .VayCuoiDiBan ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuConTinTuc ul li:hover .VayCuoiDiBan ul {
+  display: block;
+}
+/* ----------------------------------------------------Trang phục cưới - áo dài cưới------------------------------- */
+.logoVCLL1 {
+  display: flex;
+}
+
+.logoVCLL1 i {
+  margin-left: 96px; /* Để khoảng cách giữa văn bản và biểu tượng */
+}
+
+.menuConTPC ul {
+  position: relative;
+}
+
+.menuConTPC ul li {
+  position: relative;
+}
+
+.menuConTPC .aoDaiCuoi {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -200px; /* Ẩn menu con ban đầu ở bên phải */
+  width: 200px;
+  background-color: whitesmoke;
+  z-index: 10;
+  opacity: 0; /* Mặc định là ẩn */
+  transition: opacity 0.3s ease; /* Hiệu ứng mượt khi thay đổi opacity */
+}
+
+.menuConTPC ul li:hover > .aoDaiCuoi {
+  display: block;
+  right: 1; /* Hiển thị menu bên phải của mục chính */
+  opacity: 1; /* Hiển thị menu con */
+}
+
+.menuConTPC .aoDaiCuoi ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuConTinTuc ul li:hover .aoDaiCuoi ul {
+  display: block;
+}
+/* ----------------------menu Dịch vụ---------------------------------------------------------------------------- */
+/* Tạo kiểu cho hộp menu */
+.box-menu {
+  background-color: white;
+  text-align: center;
+  color: rgb(201, 155, 99);
+  letter-spacing: 0.2px;
+}
+
+.box-menu ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box-menu ul li {
+  width: 140px; /* Chiều rộng của mỗi mục menu */
+  height: 35px; /* Chiều cao của mỗi mục menu */
+  margin: 2px; /* Khoảng cách giữa các mục menu */
+  padding: 10px; /* Khoảng cách bên trong của mỗi mục menu */
+  white-space: nowrap; /* Ngăn các mục menu xuống dòng */
+  font-size: 12px;
+  letter-spacing: 1px;
+  position: relative; /* Để sử dụng pseudo-element */
+}
+
+.box-menu ul li a {
+  color: rgb(201, 155, 99);
+  text-decoration: none;
+  position: relative; /* Để sử dụng pseudo-element */
+  z-index: 1; /* Đặt trên pseudo-element */
+}
+
+.box-menu ul li::before {
+  content: ""; /* Nội dung trống để tạo hình ô vuông */
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 0; /* Căn trên cùng */
+  left: 0; /* Căn bên trái */
+  width: 99%; /* Chiều rộng 100% */
+  height: 95%; /* Chiều cao 100% */
+  background-color: rgba(201, 155, 99, 0.5); /* Màu nền khi hover với độ mờ */
+  transition: opacity 0.2s ease-in-out; /* Hiệu ứng chuyển đổi mờ dần */
+  opacity: 0; /* Bắt đầu với độ mờ bằng 0 */
+  z-index: 0; /* Đặt dưới nội dung */
+}
+
+.box-menu ul li:hover::before {
+  opacity: 0.2; /* Khi hover, độ mờ sẽ là 1 */
+}
+
+/* Styling for submenu */
+.box-submenu {
+  display: none;
+  position: absolute;
+  background: rgb(245, 245, 244);
+  margin-top: 15px;
+  margin-left: -15px;
+  z-index: 300; /* Đảm bảo submenu hiển thị trên các phần tử khác */
+}
+
+.box-menu ul li:hover .box-submenu {
+  display: block;
+}
+
+.box-menu ul li:hover .box-submenu ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.box-menu ul li:hover .box-submenu ul li {
+  width: 200px; /* Đặt chiều rộng của các phần tử <li> là 200px. */
+  text-align: left; /* Căn chỉnh văn bản sang trái trong các phần tử <li>. */
+  border-bottom: 0px dotted #fff; /* Đặt đường viền dưới của các phần tử <li> thành dạng chấm (dotted),
+      /* màu trắng (fff), và chiều cao là 0px (không có đường viền). */
+  background: transparent; /* Đặt nền của các phần tử <li> là trong suốt. */
+  border-radius: 0; /* Đặt độ cong của các góc của các phần tử <li> thành 0, làm cho chúng có các góc vuông. */
+  padding: 5px; /*Đặt phần đệm (padding) của các phần tử <li> là 5px, tạo khoảng cách giữa nội dung và biên của phần tử. */
+  margin: 5px; /*Đặt phần lề (margin) của các phần tử <li> là 5px, tạo khoảng cách giữa các phần tử. */
+}
+
+.box-menu ul li:hover .box-submenu ul li:last-child {
+  border-bottom: none; /* Loại bỏ đường gạch chân dưới của phần tử cuối cùng */
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -----------------------------------------Con MAY VÁY CƯỚI--------------------- */
+.khoanCachLogoMVC {
+  display: flex;
+}
+
+.khoanCachLogoMVC i {
+  margin-left: 87px; /* Để khoảng cách giữa văn bản và biểu tượng */
+}
+
+.conMayVayCuoi ul {
+  position: relative;
+}
+
+.box-submenu ul li {
+  position: relative;
+}
+
+.box-submenu .conMayVayCuoi {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -200px; /* Ẩn menu con ban đầu ở bên phải */
+  width: 200px;
+  background-color: whitesmoke;
+  z-index: 10;
+  opacity: 0; /* Mặc định là ẩn */
+  transition: opacity 0.3s ease; /* Hiệu ứng mượt khi thay đổi opacity */
+}
+
+.box-submenu ul li:hover > .conMayVayCuoi {
+  display: block;
+  right: 1; /* Hiển thị menu bên phải của mục chính */
+  opacity: 1; /* Hiển thị menu con */
+}
+
+.box-submenu .conMayVayCuoi ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box-submenu ul li:hover .conMayVayCuoi ul {
+  display: block;
+}
+
+.box-submenu .conMayVayCuoi ul li {
+  text-align: left;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  padding: 5px;
+  margin: 0;
+}
+
+.box-submenu .conMayVayCuoi ul li:last-child {
+  border-bottom: none;
+}
+/* ----------------------------------------Con May áo dài cưới---------------------------- */
+.khoanCachLogoADC {
+  display: flex;
+}
+
+.khoanCachLogoADC i {
+  margin-left: 70px; /* Để khoảng cách giữa văn bản và biểu tượng */
+}
+
+.conMayAoDaiCuoi ul {
+  position: relative;
+}
+
+.box-submenu ul li {
+  position: relative;
+}
+
+.box-submenu .conMayAoDaiCuoi {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -200px; /* Ẩn menu con ban đầu ở bên phải */
+  width: 200px;
+  background-color: whitesmoke;
+  z-index: 10;
+  opacity: 0; /* Mặc định là ẩn */
+  transition: opacity 0.3s ease; /* Hiệu ứng mượt khi thay đổi opacity */
+}
+
+.box-submenu ul li:hover > .conMayAoDaiCuoi {
+  display: block;
+  right: 1; /* Hiển thị menu bên phải của mục chính */
+  opacity: 1; /* Hiển thị menu con */
+}
+
+.box-submenu .conMayAoDaiCuoi ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box-submenu ul li:hover .conMayAoDaiCuoi ul {
+  display: block;
+}
+
+.box-submenu .conMayAoDaiCuoi ul li {
+  text-align: left;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  padding: 5px;
+  margin: 0;
+}
+
+.box-submenu .conMayAoDaiCuoi ul li:last-child {
+  border-bottom: none;
+}
+
+/* -------------------------------------Menu Kế hoạch cưới------------------------- */
+.box-submenu ul li:hover > .menuConKHC {
+  display: block;
+}
+.menuConKHC {
+  display: none;
+  position: absolute;
+  top: 38px;
+  height: 80px;
+  left: 0;
+  margin-bottom: 200px; /* Di chuyển lên trên */
+  background-color: whitesmoke;
+  z-index: 10;
+}
+.box-menu ul li:hover .menuConKHC {
+  display: block;
+}
+
+.box-menu ul li:hover .menuConKHC ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.box-menu ul li:hover .menuConKHC ul li {
+  width: 200px; /* Đặt chiều rộng của các phần tử <li> là 200px. */
+  text-align: left; /* Căn chỉnh văn bản sang trái trong các phần tử <li>. */
+  border-bottom: 0px dotted #fff; /* Đặt đường viền dưới của các phần tử <li> thành dạng chấm (dotted),
+        /* màu trắng (fff), và chiều cao là 0px (không có đường viền). */
+  background: transparent; /* Đặt nền của các phần tử <li> là trong suốt. */
+  border-radius: 0; /* Đặt độ cong của các góc của các phần tử <li> thành 0, làm cho chúng có các góc vuông. */
+  padding: 5px; /*Đặt phần đệm (padding) của các phần tử <li> là 5px, tạo khoảng cách giữa nội dung và biên của phần tử. */
+  margin: 5px; /*Đặt phần lề (margin) của các phần tử <li> là 5px, tạo khoảng cách giữa các phần tử. */
+}
+
+.box-menu ul li:hover .menuConKHC ul li:last-child {
+  border-bottom: none; /* Loại bỏ đường gạch chân dưới của phần tử cuối cùng */
+}
+/* -------------------------------------Menu Bộ sưu tập------------------------- */
+
+.box-submenu ul li:hover > .menuConBST {
+  display: block;
+}
+.menuConBST {
+  display: none;
+  position: absolute;
+  top: 38px;
+  height: 525px;
+  left: 0;
+  margin-bottom: 200px; /* Di chuyển lên trên */
+  background-color: whitesmoke;
+  z-index: 10;
+}
+.box-menu ul li:hover .menuConBST {
+  display: block;
+}
+
+.box-menu ul li:hover .menuConBST ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.box-menu ul li:hover .menuConBST ul li {
+  width: 200px; /* Đặt chiều rộng của các phần tử <li> là 200px. */
+  text-align: left; /* Căn chỉnh văn bản sang trái trong các phần tử <li>. */
+  border-bottom: 0px dotted #fff; /* Đặt đường viền dưới của các phần tử <li> thành dạng chấm (dotted),
+        /* màu trắng (fff), và chiều cao là 0px (không có đường viền). */
+  background: transparent; /* Đặt nền của các phần tử <li> là trong suốt. */
+  border-radius: 0; /* Đặt độ cong của các góc của các phần tử <li> thành 0, làm cho chúng có các góc vuông. */
+  padding: 5px; /*Đặt phần đệm (padding) của các phần tử <li> là 5px, tạo khoảng cách giữa nội dung và biên của phần tử. */
+  margin: 5px; /*Đặt phần lề (margin) của các phần tử <li> là 5px, tạo khoảng cách giữa các phần tử. */
+}
+
+.box-menu ul li:hover .menuConBST ul li:last-child {
+  border-bottom: none; /* Loại bỏ đường gạch chân dưới của phần tử cuối cùng */
+}
+/* -------------------------------------------------menu Tin Tức------------------------------------------------------------- */
+.khoanCachLogo {
+  display: flex;
+}
+
+.khoanCachLogo i {
+  margin-left: 70px; /* Để khoảng cách giữa văn bản và biểu tượng */
+}
+.box-submenu ul li:hover > .menuConTinTuc {
+  display: block;
+}
+.menuConTinTuc {
+  display: none;
+  position: absolute;
+  top: 38px;
+  height: 125px;
+  left: 0;
+  margin-bottom: 200px; /* Di chuyển lên trên */
+  background-color: whitesmoke;
+  z-index: 10;
+}
+.box-menu ul li:hover .menuConTinTuc {
+  display: block;
+}
+
+.box-menu ul li:hover .menuConTinTuc ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.box-menu ul li:hover .menuConTinTuc ul li {
+  width: 200px; /* Đặt chiều rộng của các phần tử <li> là 200px. */
+  text-align: left; /* Căn chỉnh văn bản sang trái trong các phần tử <li>. */
+  border-bottom: 0px dotted #fff; /* Đặt đường viền dưới của các phần tử <li> thành dạng chấm (dotted),
+        /* màu trắng (fff), và chiều cao là 0px (không có đường viền). */
+  background: transparent; /* Đặt nền của các phần tử <li> là trong suốt. */
+  border-radius: 0; /* Đặt độ cong của các góc của các phần tử <li> thành 0, làm cho chúng có các góc vuông. */
+  padding: 5px; /*Đặt phần đệm (padding) của các phần tử <li> là 5px, tạo khoảng cách giữa nội dung và biên của phần tử. */
+  margin: 5px; /*Đặt phần lề (margin) của các phần tử <li> là 5px, tạo khoảng cách giữa các phần tử. */
+}
+
+.box-menu ul li:hover .menuConTinTuc ul li:last-child {
+  border-bottom: none; /* Loại bỏ đường gạch chân dưới của phần tử cuối cùng */
+}
+
+/* ----------------------------------con Tin Tuc Linh Nga------------------------ */
+.menuConTinTuc ul {
+  position: relative;
+}
+
+.menuConTinTuc ul li {
+  position: relative;
+}
+
+.menuConTinTuc .conTinTuc {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -200px; /* Ẩn menu con ban đầu ở bên phải */
+  width: 200px;
+  background-color: whitesmoke;
+  z-index: 10;
+  opacity: 0; /* Mặc định là ẩn */
+  transition: opacity 0.3s ease; /* Hiệu ứng mượt khi thay đổi opacity */
+}
+
+.menuConTinTuc ul li:hover > .conTinTuc {
+  display: block;
+  right: 1; /* Hiển thị menu bên phải của mục chính */
+  opacity: 1; /* Hiển thị menu con */
+}
+
+.menuConTinTuc .conTinTuc ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuConTinTuc ul li:hover .conTinTuc ul {
+  display: block;
+}
+
+.menuConTinTuc .conTinTuc ul li {
+  text-align: left;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  padding: 5px;
+  margin: 0;
+}
+
+.menuConTinTuc .conTinTuc ul li:last-child {
+  border-bottom: none;
+}
+/* -------------------------------------------------Đối Tác------------------------------ */
+.box-submenu ul li:hover > .conDoiTac {
+  display: block;
+}
+.conDoiTac {
+  display: none;
+  position: absolute;
+  top: 38px;
+  height: 75px;
+  left: 0;
+  margin-bottom: 200px; /* Di chuyển lên trên */
+  background-color: whitesmoke;
+  z-index: 10;
+}
+.box-menu ul li:hover .conDoiTac {
+  display: block;
+}
+
+.box-menu ul li:hover .conDoiTac ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.box-menu ul li:hover .conDoiTac ul li {
+  width: 200px; /* Đặt chiều rộng của các phần tử <li> là 200px. */
+  text-align: left; /* Căn chỉnh văn bản sang trái trong các phần tử <li>. */
+  border-bottom: 0px dotted #fff; /* Đặt đường viền dưới của các phần tử <li> thành dạng chấm (dotted),
+        /* màu trắng (fff), và chiều cao là 0px (không có đường viền). */
+  background: transparent; /* Đặt nền của các phần tử <li> là trong suốt. */
+  border-radius: 0; /* Đặt độ cong của các góc của các phần tử <li> thành 0, làm cho chúng có các góc vuông. */
+  padding: 5px; /*Đặt phần đệm (padding) của các phần tử <li> là 5px, tạo khoảng cách giữa nội dung và biên của phần tử. */
+  margin: 5px; /*Đặt phần lề (margin) của các phần tử <li> là 5px, tạo khoảng cách giữa các phần tử. */
+}
+
+.box-menu ul li:hover .conDoiTac ul li:last-child {
+  border-bottom: none; /* Loại bỏ đường gạch chân dưới của phần tử cuối cùng */
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */

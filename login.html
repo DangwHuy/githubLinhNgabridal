@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: url(./img/pexels-photo-1172675.jpeg);
+        background-size: cover;
+        font-family: Arial, sans-serif;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        background: white;
+        border-radius: 45px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input,
+      select,
+      textarea {
+        margin-bottom: 8px;
+        width: 100%;
+        padding: 10px;
+        border: 1.5px solid #ccc;
+        border-radius: 500px;
+        box-sizing: border-box;
+        transition: opacity 0.3s, height 0.3s;
+      }
+      button,
+      .toggle-button,
+      .social-button {
+        padding: 10px 20px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .toggle-button {
+        margin-left: 10px;
+        background: #f8b500;
+      }
+      .toggle-button i {
+        margin-right: 5px;
+      }
+      .toggle-button:hover {
+        background: #f39;
+      }
+      .social-button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .social-button i {
+        margin-right: 10px;
+      }
+      .social-button.facebook {
+        background: #3b5998;
+      }
+      .social-button.google {
+        background: #db4437;
+      }
+      .social-button.apple {
+        background: #333333;
+      }
+      .social-button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action="your_action_url"
+      enctype="multipart/form-data"
+      method="post"
+      name="your_form_name"
+    >
+      <label for="text_input"
+        ><i class="fa fa-user-circle" aria-hidden="true"></i> Tài khoản</label
+      >
+      <input
+        type="text"
+        name="text_input"
+        id="text_input"
+        placeholder="Tài Khoản"
+      />
+
+      <label for="password_input"
+        ><i class="fa fa-unlock-alt" aria-hidden="true"></i> Mật khẩu</label
+      >
+      <div style="display: flex; align-items: center; width: 100%">
+        <input
+          type="password"
+          name="password_input"
+          id="password_input"
+          placeholder="Mật khẩu"
+          style="flex: 1"
+        />
+        <button type="button" class="toggle-button" id="togglePassword">
+          <i class="fa fa-eye" aria-hidden="true"></i> Hiện
+        </button>
+      </div>
+
+      <label for="date_input">Ngày sinh</label>
+      <input type="date" name="date_input" id="date_input" />
+
+      <label for="time_input">Giờ</label>
+      <input type="time" name="time_input" id="time_input" />
+
+      <label for="select_input">Chọn địa điểm</label>
+      <select name="select_input" id="select_input">
+        <option value="option1">Vũng tàu</option>
+        <option value="option2">Đà lạt</option>
+        <option value="option3">Đăk Lắk</option>
+        <option value="option4">Lâm Đồng</option>
+        <option value="option5">Đăk Nông</option>
+        <option value="option6">Nha Trang</option>
+        <option value="option7">Liên hệ khác</option>
+      </select>
+
+      <label for="textarea_id">Bình Luận</label>
+      <textarea
+        name="textarea_input"
+        id="textarea_id"
+        placeholder="Bình luận của bạn ở đây..."
+      ></textarea>
+
+      <button type="submit">
+        Login<i class="fa fa-sign-in" aria-hidden="true"></i>
+      </button>
+
+      <p>Hoặc đăng nhập bằng:</p>
+      <button type="button" class="social-button facebook">
+        <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+      </button>
+      <button type="button" class="social-button google">
+        <i class="fa fa-google" aria-hidden="true"></i> Google
+      </button>
+      <button type="button" class="social-button apple">
+        <i class="fa fa-apple" aria-hidden="true"></i> Apple
+      </button>
+    </form>
+    <script>
+      document
+        .getElementById("togglePassword")
+        .addEventListener("click", function () {
+          const passwordInput = document.getElementById("password_input");
+          const icon = this.querySelector("i");
+          if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
+            this.textContent = " Ẩn";
+          } else {
+            passwordInput.type = "password";
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+            this.textContent = " Hiện";
+          }
+        });
+    </script>
+  </body>
+</html>

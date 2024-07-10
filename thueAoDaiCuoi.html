@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tham khảo dịch vụ may váy cưới</title>
+    <link rel="stylesheet" href="ThueAoDaiCuoi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="click.js" />
+    <style>
+      /* CSS cho container chứa số điện thoại và biểu tượng */
+      .fixed-phone {
+        position: fixed;
+        bottom: 10px; /* Khoảng cách từ dưới cùng của trang */
+        right: 10px; /* Khoảng cách từ bên phải của trang */
+        display: flex;
+        align-items: center;
+      }
+      /* CSS cho số điện thoại */
+      .phone-number {
+        background-color: #555; /* Màu nền xám */
+        color: white; /* Màu chữ trắng */
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+      }
+      /* CSS cho biểu tượng điện thoại */
+      .phone-icon {
+        background-color: red; /* Màu nền đỏ */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* CSS cho hình ảnh bên trong biểu tượng */
+      .phone-icon img {
+        width: 50px;
+        height: 50px;
+      }
+      /* CSS cho footer */
+      .footer {
+        background-color: #f2f2f2; /* Màu nền xám nhạt */
+        padding: 20px 0;
+        text-align: center;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .footer-column {
+        flex: 1;
+        min-width: 250px;
+        padding: 10px;
+      }
+      .footer-column h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      .footer-column p,
+      .footer-column a {
+        margin: 5px 0;
+        color: #333;
+        text-decoration: none;
+      }
+      .footer-column p a,
+      .footer-column a:hover {
+        color: #ff6347; /* Màu cam nhạt */
+      }
+      .footer-logo img {
+        max-width: 100px;
+        margin-bottom: 10px;
+      }
+      .footer-icon {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .footer-icon img {
+        width: 25px;
+        height: 25px;
+      }
+      /* CSS cho phần tử TieuDe */
+      .TieuDe {
+        text-align: center; /* Căn giữa phần tử */
+        margin: 50px; /* Khoảng cách trên và dưới */
+        font-size: 1px; /* Kích cỡ font */
+        margin-bottom: 20px; /* Tạo khoảng cách dưới là 20px */
+      }
+      .TieuDe a {
+        display: inline-block;
+      }
+      .TieuDe img {
+        max-width: 100%;
+        height: auto; /* Đảm bảo hình ảnh không bị méo */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-phone">
+      <div class="phone-number">0392941407</div>
+      <div class="phone-icon">
+        <img src="./img/tải xuống.png" alt="Phone" />
+      </div>
+    </div>
+    <div class="TieuDe">
+      <a href="login.html"
+        ><img src="./img/Logo-LINHNGA-RBG-800x197.png" width="200" alt=""
+      /></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.pinterest.com" target="_blank" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+      <a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a> 
+  </div>
+    <hr class="custom-hr" />
+   
+    <div class="box-menu">
+      <ul>
+        <li class="acctive">
+          <a href="duan1.html"
+            ><i class="fa fa-user-circle" aria-hidden="true"></i>VỀ LINH NGA</a
+          >
+        </li>
+        <li>
+          <a href="TrangPhucCuoi.html"
+            >TRANG PHỤC CƯỚI<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConTPC"><ul>
+            <li><a href="VayCuoiLamLe.html" class="logoVCLL">Váy cưới làm lễ<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="conVayCuoiLamLe"><ul>
+              <li><a href="hauteCouture.html">Haute Couture</a></li>
+              <li><a href="limited.html">Limited</a></li>
+              <li><a href="luxury.html">Luxury</a></li>
+              <li><a href="grace.html">Grace</li>
+            </ul></div></li>
+            <li><a href="VayCuoiDiBan.html" class="logoVCLL">Váy cưới đi bàn<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="VayCuoiDiBan">
+              <ul>
+                <li><a href="hauteCouture.html">Haute Couture</a></li>
+                <li><a href="limited.html">Limited</a></li>
+                <li><a href="luxury.html">Luxury</a></li>
+                <li><a href="grace.html">Grace</a></li></ul>
+            </div></li>
+            <li><a href="aoDaiCuoi.html" class="logoVCLL1">Áo dài cưới<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="aoDaiCuoi">
+              <ul>
+                <li><a href="#">Limited</a></li>
+                <li><a href="#">Luxury</a></li>
+               
+              </ul>
+            </div></li>
+            <li><a href="aoDaiCuoi.html">Áo choàng</a></li>
+            <li><a href="shilaByLinhNga.html">Shila by Linh Nga</a></li>
+          </ul></div>
+        </li>
+        <li>
+          <a href="dichVu.html"
+            >DỊCH VỤ<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="box-submenu">
+            <ul>
+              <li><a href="./thuevaycuoi.html">Thuê váy cưới</a></li>
+              <li><a href="./thueAoDaiCuoi.html">Thuê áo dài cưới</a></li>
+              <li><a href="mayVayCuoi.html" class="khoanCachLogoMVC">May váy cưới<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              <div class="conMayVayCuoi">
+                <ul>
+                  <li><a href="mayThueMacNuocDau.html">May thuê mặc nước đầu</a></li>
+                  <li><a href="mayMuaSoHuuRieng.html">May mua sở hữu riêng</a></li>
+                </ul>
+              </div>
+              </li>
+              <li><a href="mayAoDaiCuoi.html" class="khoanCachLogoADC">May áo dài cưới<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              <div class="conMayAoDaiCuoi">
+                <ul>
+              <li><a href="mayThueMacNuocDau1.html">May thuê mặc nước đầu</a></li>
+              <li><a href="mayMuaSoHuuRieng1.html">May mua sở hữu riêng</a></li></ul></div></li>
+              <li><a href="thietKeVayCuoiTuXa.html">Thiết kế váy cưới từ xa</a></li>
+              <li><a href="thietKeVayCuoiTaiShop.html">Thiết kế váy cưới tại shop</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="keHoachCuoi.html"
+            >KẾ HOẠCH CƯỚI<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConKHC">
+            <ul>
+              <li><a href="keHoachDuTruChiPhiCuoi.html">kế hoạch dự trù chi phí cưới</a></li>
+              <li><a href="vayCuoiTrongMoCuaBan.html">váy cưới trong mơ của bạn</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="BoSuTap.html"
+            >BỘ SƯU TẬP<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConBST">
+            <ul>
+              <li><a href="L'AMUOR.html">L'AMOUR DE MA VIE</a></li>
+              <li><a href="BEYOUD.html">BEYOUD GLAMOUR</a></li>
+              <li><a href="Dreamy.html">Dreamy</a></li>
+              <li><a href="TheIris2023.html">The Iris 2023</a></li>
+              <li><a href="Hedge.html">Hedge Maze 2022</a></li>
+              <li><a href="TheFloral.html">The Floral Muse 2022</a></li>
+              <li><a href="aoDaiCuoiVienMan2022.html">Áo dài cưới Viên Mãn 2022</a></li>
+              <li><a href="Malisa2021.html">Malisa 2021</a></li>
+              <li><a href="Grace2021.html">Grace 2021</a></li>
+              <li><a href="Serissa2021.html">Serissa 2021</a></li>
+              <li><a href="RoyalQueen2021.html">Royal Queen 2021</a></li>
+              <li><a href="TheElegance2020.html">The Elegance 2020</a></li>
+              <li><a href="whitePetals.html">White Petals</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="tinTuc.html"
+            >TIN TỨC<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConTinTuc">
+          <ul>
+            <li><a href="TinTucNganhCuoi.html">Tin tức ngành cưới</a></li>
+            <li>
+              <a href="tinTucLinhNga.html" class="khoanCachLogo">Tin tức Linh Nga<i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
+              <div class="conTinTuc">
+                <ul>
+                  <li><a href="damCuoi.html">Đám Cưới</a></li>
+                  <li><a href="LinhNga&DoiTac.html">Linh Nga & đối tác</a></li>
+                  <li><a href="TuyenDung.html">Tuyển dụng</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="thongTinVayCuoi.html">Thông tin váy cưới</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="doiTac.html"
+            >ĐỐI TÁC<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="conDoiTac">
+            <ul>
+          <li><a href="FormVoucher67tr.html">Form voucher 67 triệu đồng</a></li>
+          <li><a href="voucher15tr.html">Voucher đồng giá 15 triệu đồng</a></li>
+        </ul>
+      </div>
+        </li>
+        <li>
+          <a href="lienHe.html"
+            >LIÊN HỆ
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+    <h1>DỊCH VỤ THUÊ ÁO DÀI CƯỚI CỦA LINH NGA BRIDAL</h1>
+    <figure>
+      <img
+        src="./img/353429150_641511988001609_4737871387545144919_n.jpg"
+        width="1050"
+        alt=""
+      />
+      <figcaption>Thuê áo dài cưới Linh Nga Bridal</figcaption>
+    </figure>
+    <p>
+      Áo dài cưới mang vẻ đẹp nền nã, là minh chứng vĩnh cửu, là hiện thân của
+      nét văn hóa bao đời của Việt Nam. Những giá trị truyền thống đó vẫn vẹn
+      nguyên cho đến hôm nay. Không đem theo nét hối hả của cuộc sống thường
+      ngày, áo dài ở lại ghi dấu cho nét đẹp vượt thời gian. Bên cạnh tính trang
+      trọng của tà áo dài cưới, mỗi cô dâu còn muốn bộ áo dài khoác trên mình có
+      thể khắc họa được trọn vẹn vẻ đẹp yêu kiều, thể hiện được tiếng nói và
+      phong cách cá nhân, để lại dấu ấn đậm nét trong ngày cưới của mình. Cùng
+      tìm hiểu dịch vụ thuê áo dài cưới của Linh Nga Bridal nhé!
+    </p>
+    <h3>Tham Khảo :</h3>
+    <li>Bảng kế hoạch dự trù chi phí cưới</li>
+    <li>Phác họa mẫu váy cưới trong mơ</li>
+    <h2>Lợi ích của việc thuê áo dài cưới</h2>
+    <p>
+      Có thể nói, áo dài cưới là món đồ không thể vắng mặt trong xuyên suốt dòng
+      chảy thời gian, là nhân tố góp phần tôn vinh vẻ đẹp của nhân vật chính
+      trong ngày trọng đại. Thuê áo dài cưới là xu hướng phù hợp với xu thế hiện
+      nay, vậy những lợi ích của việc này là gì?
+    </p>
+    <figure>
+      <img
+        src="./img/351986834_723287186154042_5163079100184130825_n.jpg"
+        width="500"
+        alt=""
+      />
+      <figcaption>Thuê áo dài cưới Linh Nga Bridal</figcaption>
+    </figure>
+    <h2>Tiết kiệm chi phí</h2>
+    <p>
+      Việc thuê áo dài cưới mang lại cho bạn lợi ích tài chính đáng kể so với
+      việc may hay mua một bộ áo dài mới. Từ đó, nàng có thể tiết kiệm được một
+      khoản lớn trong ngân sách cưới và có dư phần để sử dụng cho các việc khác.
+      Khoản tiền đó nàng có thể dùng để đầu tư cho những yếu tố quan trọng hơn
+      như địa điểm hay trang sức, phụ kiện hay bữa tiệc. Bên cạnh đó, áo dài
+      cưới chỉ sử dụng một lần, việc thuê áo dài cưới và hoàn trả sau ngày cưới
+      cũng sẽ tránh được các khâu rườm rà như vệ sinh hay bảo quản áo dài.
+    </p>
+
+    <h2>Linh hoạt trong các lựa chọn</h2>
+    <p>
+      Thuê áo dài cưới là cơ hội để nàng có thể thoải mái lựa chọn từ hàng trăm
+      mẫu với kiểu dáng và phong cách khác nhau. Những cửa hàng còn cung cấp cho
+      nàng sự đa dạng về mẫu mã, lối thiết kế, màu sắc, chất liệu. Nàng sẽ có
+      một thiên đường để lựa chọn và mặc thử các thiết kế đó cho đến khi ưng ý
+      mới thôi. Những bộ áo dài cưới từ truyền thống đến phá cách hiện đại, hay
+      tà áo dài uyển chuyển điệu đà, mang tính sáng tạo cao sẽ giúp nàng có một
+      diện mạo hoàn mỹ, đúng phong cách cá nhân và trở thành một cô dâu độc bản
+      trong lễ cưới.
+    </p>
+    <h2>Giảm thiểu các rủi ro</h2>
+    <p>
+      Việc giảm thiểu các rủi ro khi thuê áo dài cưới được thể hiện ở việc nàng
+      không cần phải quá lo lắng khi áo dài cưới bị thất lạc hay hư hỏng. Cửa
+      hàng mà bạn lựa chọn thuê áo dài cưới sẽ có các chính sách để đảm bảo rằng
+      áo dài sẽ được chuẩn bị và đáp ứng đúng với mong muốn và nguyện vọng của
+      nàng trong ngày cưới. Nàng sẽ yên tâm hơn về bộ áo dài cưới sẽ được đảm
+      bảo an toàn và trong tình trạng tốt nhất khi giao đến tay nàng.
+    </p>
+    <h3>Tham khảo: Mẫu áo dài cưới và áo dài đám hỏi Linh Nga Bridal</h3>
+    <h2>Lựa chọn thuê áo dài cưới sao cho phù hợp?</h2>
+    <p>
+      Để chọn được bộ áo dài cưới phù hợp nhất với phong cách và vóc dáng của
+      mình, hãy lưu tâm về các vấn đề sau:
+    </p>
+
+    <figure>
+      <img
+        src="./img/328145334_495755032731880_8938886305007775052_n.jpg"
+        width="500"
+        alt=""
+      />
+      <figcaption>Thuê áo dài cưới Linh Nga Bridal</figcaption>
+    </figure>
+    <h2>Tìm hiểu phong cách và kiểu dáng</h2>
+    <p>
+      Bước đầu tiên sau quyết định thuê áo dài cưới chính là xác định được phong
+      cách và kiểu dáng và mình mong muốn trở thành. Nàng hãy tìm hiểu xu hướng
+      thời trang áo dài cưới nào đang thịnh hành, phân định rõ áo dài cưới hiện
+      đại và truyền thống để có những khung hình rõ ràng về sự lựa chọn của
+      mình. Nàng cũng có thể cập nhật những thông tin liên quan trong các tạp
+      chí cưới, trang web uy tín hay mạng xã hội để tìm kiếm nguồn cảm hứng và ý
+      tưởng về bộ áo dài cưới trong mơ. Điều này sẽ giúp nàng có những hướng dẫn
+      cho việc tìm kiếm áo dài phù hợp hơn.
+    </p>
+    <h2>Thử áo dài và so sánh giữa các thương hiệu</h2>
+    <p>
+      Khi đến cửa hàng cho thuê áo dài cưới, nàng hãy thử nhiều kiểu áo dài khác
+      nhau để tìm được bộ áo dài phù hợp nhất về kiểu dáng, chất liệu, đặc biệt
+      là vóc dáng và phong cách mà nàng đang hướng tới. Tuy nhiên, trước khi
+      quyết định thuê áo dài cưới, nàng hãy thử tìm hiểu trước về nhận xét của
+      các khách hàng xung quanh, tìm hiểu về danh sách, các mẫu áo dài mà dịch
+      vụ đó đang cung cấp. Tiến hành so sánh và đối chiếu để có được những quyết
+      định đúng đắn nhất nhé.
+    </p>
+    <h2>Đo kích cỡ và chỉnh sửa áo</h2>
+    <p>
+      Hãy luôn yêu cầu nhân viên cửa hàng đo kích cỡ của mình bởi nó đóng vai
+      trò cực kỳ quan trọng. Khi thuê áo dài cưới, đo kích cỡ đảm bảo rằng áo
+      dài cưới sau khi thuê sẽ vừa văn hoàn hảo với nàng dâu. Điều đó chắc chắn
+      cho việc áo dài cưới sẽ được chỉnh sửa chính xác với vòng ngực, vòng eo và
+      vòng hông, để tôn vinh được toàn bộ đường cong cơ thể nàng.
+    </p>
+    <h3>
+      Tham khảo: Bảng giá váy cưới, áo dài cưới, áo dài đám hỏi của Linh Nga
+      Bridal
+    </h3>
+    <h2>Những lưu ý khi đi thuê áo dài cưới</h2>
+    <i>Tìm hiểu về cửa hàng và dịch vụ thuê áo dài cưới</i>
+    <p>
+      Trước khi quyết định thuê áo dài cưới, nàng cần tìm hiểu kỹ lưỡng về cửa
+      hàng mình sẽ hợp tác cũng như các dịch vụ thuê tại đây. Nàng có thể tham
+      khảo và đánh phản hồi từ các khách hàng trước của cửa hàng đó, xem họ có
+      hài lòng với thiết kế áo dài, với dịch vụ đi kèm hay không. Điều này sẽ
+      giúp nàng có cái nhìn tổng quan về chất lượng dịch vụ cũng như sự hài lòng
+      của khách hàng trước đó. Tìm hiểu thông qua các đánh giá trên các nền tảng
+      mạng xã hội, hoặc từ người quen từng thuê áo tại cửa hàng đó. Áo dài cưới
+      là thành tố quan trọng trong lễ cưới, vì vậy, bỏ ra nhiều thời gian và
+      công sức để chọn lọc cửa hàng sẽ đem lại kết quả tốt hơn cho tổng thể buổi
+      tiệc.
+    </p>
+    <figure>
+      <img
+        src="./img/311033362_5645299698826834_6821995459342383046_n.jpg"
+        width="1000"
+        alt=""
+      />
+      <figcaption>Thuê áo dài cưới Linh Nga Bridal</figcaption>
+    </figure>
+    <h2>Đặt lịch hẹn và tham khảo ý kiến chuyên gia</h2>
+    <p>
+      Để có nhiều thời gian cho buổi hẹn cũng như được tư vấn và xem xét thuê áo
+      dài cưới một cách chỉnh chu nhất, nàng hãy liên hệ và đặt lịch hẹn với cửa
+      hàng. Nếu không hẹn trước, đột ngột đến cửa hàng, đôi khi nàng sẽ gặp phải
+      những tình huống không đáng có như cửa hàng quá đông khách, hoặc nhân viên
+      có kinh nghiệm không có mặt làm buổi ghé thăm không được như ý muốn. Hãy
+      cho cửa hàng biết bạn sẽ đến lúc nào để cửa hàng có sự chuẩn bị và nhận
+      được sự đón tiếp hoàn hảo nhất.
+    </p>
+    <figure>
+      <img
+        src="./img/335145750_710811627495443_5402156669378571086_n.jpg"
+        width="400"
+        alt=""
+      />
+      <figcaption>Thuê áo dài cưới Linh Nga Bridal</figcaption>
+    </figure>
+    <p>
+      Ngoài ra, để đảm bảo mọi quy trình diễn ra một cách chuyên nghiệp, nàng
+      được sở hữu bộ áo dài cưới phù hợp nhất, hãy tham khảo những ý kiến tư vấn
+      từ các bạn nhân viên chuyên nghiệp. Từ đó, nàng có những cân nhắc hợp lý
+      hơn và lựa chọn được áo dài cưới đúng với mong muốn và nguyện vọng của bản
+      thân.
+    </p>
+    <h2>Nắm rõ hợp đồng thuê</h2>
+    <p>
+      Hợp đồng thuê áo dài cưới sẽ chứa nhiều thông tin quan trọng, có ảnh hưởng
+      lớn đến lễ cưới của nàng. Chẳng hạn thời gian thuê, giá thuê, điều kiện
+      trả áo sau sử dụng,… Nàng cần biết đầy đủ các thông tin này và nắm vững để
+      có lịch trình phù hợp nhất. Bên cạnh đó, đảm bảo rằng nàng vẫn thực hiện
+      tốt như trong giao dịch về tình trạng áo dài khi trả lại, thời hạn giao,
+      điều kiện trả áo,… để tránh các khoản phí phạt không đáng đó sau ngày vui
+      của mình. Việc thuê áo dài cưới giúp nàng tiết kiệm chi phí, do đó, nắm rõ
+      hợp đồng thuê sẽ giúp nàng không vượt quá ngân sách chi tiêu cho đám cưới
+      mà vẫn đong đầy niềm vui cho hạnh phúc lứa đôi.
+    </p>
+    <h3>Xem thêm: May áo dài cưới, áo dài đám hỏi</h3>
+    <h2>Dịch vụ thuê áo dài cưới từ Linh Nga Bridal</h2>
+    <p>
+      Áo dài cưới là trang phục truyền thống, mang vẻ đẹp vượt thời đại từ nền
+      văn hóa Việt Nam. Trên nền áo dài truyền thống, những thiết kế với sự kết
+      hợp hài hoà giữa truyền thống và những nét hiện đại, tạo nên những chấm
+      phá khác biệt, mang đến hơi thở cách tân tinh tế, đượm màu sắc của thời
+      trang hiện đại.
+    </p>
+    <figure>
+      <img
+        src="./img/332298400_578699987635497_1211472953743645334_n.jpg"
+        width="400"
+        alt=""
+      />
+      <figcaption>Thuê áo dài cưới Linh Nga Bridal</figcaption>
+    </figure>
+    <p>
+      Thấu hiểu được điều đó, Linh Nga Bridal mong muốn có thể truyền tải được
+      giá trị văn hoá được lưu truyền trên từng đường kim thớ vải, giữ gìn bản
+      sắc nước nhà bằng cách cho ra đời bộ sưu tập áo dài cưới cao cấp với thiết
+      kế độc bản, sự kết hợp hoàn mỹ giữa văn hóa Việt Nam và xu hướng thời
+      trang hiện đại. Khoác lên người áo dài cưới của Linh Nga Bridal, nàng dâu
+      sẽ có được diện mạo thời thượng, toát lên nét đẹp hiện đại và vẫn giữ được
+      nét thanh tú và nền nã. Hiện tại Linh Nga Bridal có 2 dòng áo dài cưới:
+      Limited và Luxury.
+    </p>
+    <h2>Thuê áo dài cưới dòng Limited</h2>
+    <p>
+      Áo dài cưới dòng Limited là dòng áo dài cưới cao cấp của Linh Nga Bridal.
+      Những tà áo dài cưới dưới bàn tay tài hoa của NTK Linh Nga vẫn giữ bản sắc
+      nước nhà, truyền tải giá trị văn hóa đồng thời toát lên được sự thanh tú,
+      ngập tràn sự trẻ trung, hiện đại. Bộ sưu tập áo dài cưới Limited với thiết
+      kế độc bản, mang vẻ đẹp sang trọng và lộng lẫy qua hai bộ sưu tập hot nhất
+      2022 là BST Vân Du và BST Viên Mãn. Cả hai đều có được sự thướt tha, yêu
+      kiều, duyên dáng, giúp nàng dâu rạng rỡ hơn trong ngày trọng đại. Thuê áo
+      dài cưới dòng Limited của Linh Nga Bridal với giá chỉ từ 20.000.000đ.
+    </p>
+    <h3>Xem thêm: Mẫu áo dài cưới Limited Linh Nga Bridal</h3>
+    <h2>Thuê áo dài cưới dòng Luxury</h2>
+    <p>
+      thuần khiết và dung dị nhất của người con gái Việt Nam, áo dài cưới dòng
+      Limited thể hiện được vẻ đẹp truyền thống, đơn sơ, mộc mạc nhưng theo lối
+      sang trọng và mang nét cá nhân cao. Chất lượng cao cấp nhưng có được giá
+      tốt chính là những gì mà dòng áo dài cưới Luxury của Linh Nga Bridal hướng
+      đến. Dòng Luxury của Linh Nga Bridal vẫn là các thiết kế trong 2 BST áo
+      dài cưới là Vân Du và Viên Mãn, nàng hoàn toàn có thể thuê áo dài cưới
+      trong BST áo dài cưới Luxury, là các kết hợp hoàn mỹ giữa văn hóa Việt Nam
+      và xu hướng thời trang hiện đại với giá chỉ từ 10.000.000đ.
+    </p>
+    <h3>Xem thêm: Mẫu áo dài cưới Luxury Linh Nga Bridal</h3>
+    <figure>
+      <img
+        src="./img/342181298_6128343820588316_6086436449030426214_n.jpg"
+        width="400"
+        alt=""
+      />
+      <figcaption>Thuê áo dài cưới Linh Nga Bridal</figcaption>
+    </figure>
+    <p>
+      Thuê áo dài cưới Linh Nga Bridal “Áo dài là di sản văn hóa Việt, và là
+      niềm tự hào của con người Việt Nam. Hình ảnh người phụ nữ Việt Nam duyên
+      dáng trong tà áo dài đã làm xiêu lòng biết bao tâm hồn nghệ sĩ…” đây là
+      câu nói từ Hoa hậu Hoàn vũ Việt Nam 2019 tôn vinh vẻ đẹp “quốc phục Việt
+      Nam”. Trong ngày cưới, tà áo dài Việt Nam còn thiêng liêng hơn, đẹp đẽ hơn
+      khi là chứng nhân trong lễ gia tiên, trước quan viên hai họ về một tình
+      yêu viên mãn, kết chặt từ đây. Nếu nàng đã và đang mê đắm một vẻ đẹp
+      truyền thống như thế, muốn tìm một nơi để thuê áo dài cưới uy tín, với
+      những thiết kế đốn tim người nhìn, đậm nét đẹp “xưa cũ” nhưng lại vô cùng
+      hiện đại và bài bản thì Linh Nga Bridal hoàn toàn có thể đáp ứng. Đến Linh
+      Nga Bridal ngay để được tận mắt chiêm ngưỡng những thiết kế đã trở thành
+      kiệt tác thời đại. Đặc biệt, dịch vụ thuê áo dài cưới cao cấp Limited và
+      Luxury, với giá siêu hời vẫn đang chờ nàng đến khám phá đó. Đừng bỏ lỡ nhé
+      các nàng ơi!
+    </p>
+    <p>
+      Linh Nga Bridal đã cung cấp thông tin về dịch vụ thuê và may đồ cưới cùng
+      bảng giá thuê váy cưới trên website. Nàng có thể đến Store váy cưới của
+      Linh Nga Bridal hoặc gọi điện thoại qua số hotline 028.6683.5933 để nhận
+      được tư vấn.
+    </p>
+    <p>
+      Ngoài ra, nàng có thể tham khảo thêm mẫu đồ cưới mới nhất tại fanpage Linh
+      Nga Bridal và instagram @linhngaworld. Đừng quên truy cập website
+      linhnga.vn để cập nhật tin tức của Linh Nga Bridal nhé.
+    </p>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-logo">
+          <img src="./img/Logo-LINHNGA-RBG-800x197.png" alt="Logo" />
+          <p>Chạm Tới Giấc Mơ Công Chúa</p>
+          <img src="./img/bct2.png" alt="Icon" />
+        </div>
+        <div class="footer-column">
+          <h3>LINH NGA BRIDAL TP HCM</h3>
+          <p>
+            Địa chỉ: 284A Nam Kỳ Khởi Nghĩa, Phường 8, Quận 3, Thành phố Hồ Chí
+            Minh
+          </p>
+          <p>Hotline: 028 6683 5933</p>
+          <p>Fanpage: Linh Nga Bridal</p>
+          <p>
+            Email:
+            <a href="mailto:linhngabridal@gmail.com">linhngabridal@gmail.com</a>
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>LINH NGA BRIDAL HÀ NỘI</h3>
+          <p>
+            Địa chỉ: 15 Mai Hắc Đế, phường Nguyễn Du, quận Hai Bà Trưng, Hà Nội
+          </p>
+          <p>Hotline: 096 194 8399</p>
+          <p>Fanpage: Linh Nga Bridal Hà Nội</p>
+           <p>
+            Email:
+            <a href="mailto:linhngabridal@gmail.com">linhngabridal@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
