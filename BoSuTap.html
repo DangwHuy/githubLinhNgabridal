@@ -3,23 +3,319 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bộ Sưu Tập</title>
-    <link rel="stylesheet" href="BoSuuTap.css" />
+    <title>Bộ Sựu Tập </title>
+    <link rel="stylesheet" href="BoSuuTap1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="BoSuuTap.js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* CSS cho container chứa số điện thoại và biểu tượng */
+      .fixed-phone {
+        position: fixed;
+        bottom: 10px; /* Khoảng cách từ dưới cùng của trang */
+        right: 10px; /* Khoảng cách từ bên phải của trang */
+        display: flex;
+        align-items: center;
+      }
+      /* CSS cho số điện thoại */
+      .phone-number {
+        background-color: #555; /* Màu nền xám */
+        color: white; /* Màu chữ trắng */
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 14px;
+        font-family: Arial, sans-serif;
+      }
+      /* CSS cho biểu tượng điện thoại */
+      .phone-icon {
+        background-color: red; /* Màu nền đỏ */
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* CSS cho hình ảnh bên trong biểu tượng */
+      .phone-icon img {
+        width: 50px;
+        height: 50px;
+      }
+      /* CSS cho footer */
+      .footer {
+        background-color: #f2f2f2; /* Màu nền xám nhạt */
+        padding: 20px 0;
+        text-align: center;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .footer-column {
+        flex: 1;
+        min-width: 250px;
+        padding: 10px;
+      }
+      .footer-column h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      .footer-column p,
+      .footer-column a {
+        margin: 5px 0;
+        color: #333;
+        text-decoration: none;
+      }
+      .footer-column p a,
+      .footer-column a:hover {
+        color: #ff6347; /* Màu cam nhạt */
+      }
+      .footer-logo img {
+        max-width: 100px;
+        margin-bottom: 10px;
+      }
+      .footer-icon {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .footer-icon img {
+        width: 25px;
+        height: 25px;
+      }
+      /* CSS cho phần tử TieuDe */
+      .TieuDe {
+        text-align: center; /* Căn giữa phần tử */
+        margin: 50px; /* Khoảng cách trên và dưới */
+        font-size: 1px; /* Kích cỡ font */
+        margin-bottom: 20px; /* Tạo khoảng cách dưới là 20px */
+      }
+      .TieuDe a {
+        display: inline-block;
+      }
+      .TieuDe img {
+        max-width: 100%;
+        height: auto; /* Đảm bảo hình ảnh không bị méo */
+      }
+      
+    </style>
   </head>
   <body>
-    <ul class="pre-loader">
-      <li>L</li>
-      <li>O</li>
-      <li>A</li>
-      <li>D</li>
-      <li>I</li>
-      <li>N</li>
-      <li>G</li>
-      <li>.</li>
-      <li>.</li>
-      <li>.</li>
-      <br />
-      <li>Hãy Trở Về</li>
-    </ul>
-  </body>
-</html>
+    <div class="fixed-phone">
+      <div class="phone-number">0392941407</div>
+      <div class="phone-icon">
+        <img src="./img/tải xuống.png" alt="Phone" />
+      </div>
+    </div>
+    <div class="TieuDe">
+      <a href="login.html"
+        ><img src="./img/Logo-LINHNGA-RBG-800x197.png" width="200" alt=""
+      /></a>
+    </div>
+    <div class="logo">
+        <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.pinterest.com" target="_blank" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+        <a href="https://www.youtube.com" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a> 
+    </div>
+    <hr class="custom-hr" />
+   
+    <div class="box-menu">
+      <ul>
+        <li class="acctive">
+          <a href="./index.html"
+            ><i class="fa fa-user-circle" aria-hidden="true"></i>VỀ LINH NGA</a
+          >
+        </li>
+        <li>
+          <a href="TrangPhucCuoi.html"
+            >TRANG PHỤC CƯỚI<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConTPC"><ul>
+            <li><a href="VayCuoiLamLe.html" class="logoVCLL">Váy cưới làm lễ<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="conVayCuoiLamLe"><ul>
+              <li><a href="hauteCouture.html">Haute Couture</a></li>
+              <li><a href="limited.html">Limited</a></li>
+              <li><a href="luxury.html">Luxury</a></li>
+              <li><a href="grace.html">Grace</li>
+            </ul></div></li>
+            <li><a href="VayCuoiDiBan.html" class="logoVCLL">Váy cưới đi bàn<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="VayCuoiDiBan">
+              <ul>
+                <li><a href="hauteCouture.html">Haute Couture</a></li>
+                <li><a href="limited.html">Limited</a></li>
+                <li><a href="luxury.html">Luxury</a></li>
+                <li><a href="grace.html">Grace</a></li></ul>
+            </div></li>
+            <li><a href="aoDaiCuoi.html" class="logoVCLL1">Áo dài cưới<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+            <div class="aoDaiCuoi">
+              <ul>
+                <li><a href="#">Limited</a></li>
+                <li><a href="#">Luxury</a></li>
+               
+              </ul>
+            </div></li>
+            <li><a href="aoDaiCuoi.html">Áo choàng</a></li>
+            <li><a href="shilaByLinhNga.html">Shila by Linh Nga</a></li>
+          </ul></div>
+        </li>
+        <li>
+          <a href="dichVu.html"
+            >DỊCH VỤ<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="box-submenu">
+            <ul>
+              <li><a href="./thuevaycuoi.html">Thuê váy cưới</a></li>
+              <li><a href="./thueAoDaiCuoi.html">Thuê áo dài cưới</a></li>
+              <li><a href="mayVayCuoi.html" class="khoanCachLogoMVC">May váy cưới<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              <div class="conMayVayCuoi">
+                <ul>
+                  <li><a href="mayThueMacNuocDau.html">May thuê mặc nước đầu</a></li>
+                  <li><a href="mayMuaSoHuuRieng.html">May mua sở hữu riêng</a></li>
+                </ul>
+              </div>
+              </li>
+              <li><a href="mayAoDaiCuoi.html" class="khoanCachLogoADC">May áo dài cưới<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              <div class="conMayAoDaiCuoi">
+                <ul>
+              <li><a href="mayThueMacNuocDau1.html">May thuê mặc nước đầu</a></li>
+              <li><a href="mayMuaSoHuuRieng1.html">May mua sở hữu riêng</a></li></ul></div></li>
+              <li><a href="thietKeVayCuoiTuXa.html">Thiết kế váy cưới từ xa</a></li>
+              <li><a href="thietKeVayCuoiTaiShop.html">Thiết kế váy cưới tại shop</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="keHoachCuoi.html"
+            >KẾ HOẠCH CƯỚI<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConKHC">
+            <ul>
+              <li><a href="keHoachDuTruChiPhiCuoi.html">kế hoạch dự trù chi phí cưới</a></li>
+              <li><a href="vayCuoiTrongMoCuaBan.html">váy cưới trong mơ của bạn</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="BoSuTap.html"
+            >BỘ SƯU TẬP<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConBST">
+            <ul>
+              <li><a href="L'AMUOR.html">L'AMOUR DE MA VIE</a></li>
+              <li><a href="BEYOUD.html">BEYOUD GLAMOUR</a></li>
+              <li><a href="Dreamy.html">Dreamy</a></li>
+              <li><a href="TheIris2023.html">The Iris 2023</a></li>
+              <li><a href="Hedge.html">Hedge Maze 2022</a></li>
+              <li><a href="TheFloral.html">The Floral Muse 2022</a></li>
+              <li><a href="aoDaiCuoiVienMan2022.html">Áo dài cưới Viên Mãn 2022</a></li>
+              <li><a href="Malisa2021.html">Malisa 2021</a></li>
+              <li><a href="Grace2021.html">Grace 2021</a></li>
+              <li><a href="Serissa2021.html">Serissa 2021</a></li>
+              <li><a href="RoyalQueen2021.html">Royal Queen 2021</a></li>
+              <li><a href="TheElegance2020.html">The Elegance 2020</a></li>
+              <li><a href="whitePetals.html">White Petals</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="tinTuc.html"
+            >TIN TỨC<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="menuConTinTuc">
+          <ul>
+            <li><a href="TinTucNganhCuoi.html">Tin tức ngành cưới</a></li>
+            <li>
+              <a href="tinTucLinhNga.html" class="khoanCachLogo">Tin tức Linh Nga<i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </a>
+              <div class="conTinTuc">
+                <ul>
+                  <li><a href="damCuoi.html">Đám Cưới</a></li>
+                  <li><a href="LinhNga&DoiTac.html">Linh Nga & đối tác</a></li>
+                  <li><a href="TuyenDung.html">Tuyển dụng</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="thongTinVayCuoi.html">Thông tin váy cưới</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="doiTac.html"
+            >ĐỐI TÁC<i class="fa fa-sort-desc" aria-hidden="true"></i
+          ></a>
+          <div class="conDoiTac">
+            <ul>
+          <li><a href="FormVoucher67tr.html">Form voucher 67 triệu đồng</a></li>
+          <li><a href="voucher15tr.html">Voucher đồng giá 15 triệu đồng</a></li>
+        </ul>
+      </div>
+        </li>
+        <li>
+          <a href="lienHe.html"
+            >LIÊN HỆ
+          </a>
+        </li>
+      </ul>
+    </div>
+    <body>
+      <main>
+        <div class="content">
+          <h1>THE IRIS 2023</h1>
+          <p>
+            BST được lấy cảm hứng chủ đạo từ loài hoa mang tên 𝑰𝒓𝒊𝒔 – Hoa diên vĩ, một loài hoa được mệnh danh là đại diện của các vị thần trong Thần thoại Hy Lạp. Là loài hoa tượng trưng cho hy vọng về tương lai tốt đẹp và hạnh phúc. Đây cũng là mong ước lớn lao của Linh Nga Bridal muốn mang đến cho tất cả các nàng dâu.
+
+           
+            
+          </p>
+         <a href=""> <button class="btn"> KHÁM PHÁ NGAY</button></a>
+        </div>
+  
+        <div class="stack">
+          <div class="card">
+            <img
+              src="https://linhnga.vn/wp-content/uploads/2023/05/IMG_0146-1-768x1152.jpg"
+              alt="" />
+          </div>
+          <div class="card">
+            <img
+              src="https://linhnga.vn/wp-content/uploads/2022/06/VAY-CUOI-TRON-%E2%80%93-LUA-CHON-HANG-DAU-CUA-MY-NHAN-SHOWBIZ-VIET.jpg"
+              alt="" />
+          </div>
+          <div class="card">
+            <img
+              src="https://linhnga.vn/wp-content/uploads/2022/08/LOOK-1.1-THE-FLORAL-MUSE.jpg"
+              alt="" />
+          </div>
+          <div class="card">
+            <img
+              src="https://linhnga.vn/wp-content/uploads/2022/08/LOOK-1.2-THE-FLORAL-MUSE.jpg"
+              alt="" />
+          </div>
+          <div class="card">
+            <img
+              src="https://linhnga.vn/wp-content/uploads/2022/08/LOOK-1.3-THE-FLORAL-MUSE-1400x1988.jpg"
+              alt="" />
+          </div>
+          <div class="card">
+            <img
+              src="https://linhnga.vn/wp-content/uploads/2022/07/LOOK-2.3-HEDGE-MAZE-2022-1.jpg"
+              alt="" />
+          </div>
+        </div>
+      </main>
+    </body>
