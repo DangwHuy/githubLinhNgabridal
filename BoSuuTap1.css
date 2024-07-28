@@ -723,7 +723,7 @@ main {
   background-image: linear-gradient(-180deg, #ffc16f, #f76591);
   font-size: clamp(0.8rem, 8vw, 0.9rem);
   font-weight: 600;
-  color: #fff;
+  color: white;
   width: max-content;
   outline: 0;
   border: 0;
