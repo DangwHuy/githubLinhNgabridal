@@ -22,7 +22,7 @@ body {
 /* Thay đổi màu sắc của các biểu tượng */
 .logo {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   list-style: none;
   padding: 0;
 }
@@ -31,15 +31,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   color: #fff;
-  font-size: 25px;
+  font-size: 15px;
   text-decoration: none;
   transition: transform 0.3s;
   margin-top: -60px;
-  margin-left: 50px;
+  margin-left: 2px;
 }
 .logo a:hover {
   transform: scale(1.2);
